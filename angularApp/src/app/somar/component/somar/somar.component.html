@@ -7,15 +7,15 @@
       <div class="row">
         <div class="col-md-6 offset-md-3 border">
           <div class="btn-group btn-group-lg" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-success">Lanche R$: 5,00</button>
-            <button type="button" class="btn btn-dark">Bebida R$: 4,00</button>
-            <button type="button" class="btn btn-warning">Doce   R$: 3,00</button>
+            <button type="button" class="btn btn-success" (click)="calcula(5)" >Lanche R$: 5,00</button>
+            <button type="button" class="btn btn-dark" (click)="calcula(4)">Bebida R$: 4,00</button>
+            <button type="button" class="btn btn-warning" (click)="calcula(3)">Sobremesa  R$: 3,00</button>
           </div>
         </div>
         <div class="col-md-12">
           <div class="form-group">
             <label for="exampleInputEmail1">Valor Total</label>
-            <input type="number" class="form-control form-control-lg">
+            <input type="number" class="form-control form-control-lg" readonly [value]="capturarValor">
           </div>
         </div>
       </div>

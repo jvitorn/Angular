@@ -1,6 +1,8 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { NgModule }       from '@angular/core';
+import { CommonModule }   from '@angular/common';
 import { SomarComponent } from './component/somar/somar.component';
+import { SomarService }   from './services';
+
 
 
 
@@ -8,8 +10,12 @@ import { SomarComponent } from './component/somar/somar.component';
   declarations: [SomarComponent],
   imports: [
     CommonModule
-  ],exports:[
+  ],
+  exports:[
     SomarComponent
+  ],
+  providers:[
+    SomarService
   ]
 })
 export class SomarModule { }
